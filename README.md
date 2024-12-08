@@ -24,14 +24,17 @@ Users should be able to:
 ### Screenshot
 
 desktop display:
+
 ![](./pic1.png)
+
 mobile display:
+
 ![](./pic2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/chochimus/Product-preview-card-component](https://github.com/chochimus/Product-preview-card-component)
+- Live Site URL: [https://chochimus.github.io/Product-preview-card-component/](https://chochimus.github.io/Product-preview-card-component/)
 
 ## My process
 
