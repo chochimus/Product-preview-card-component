@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: 500, 700;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("./fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+  font-weight: 700;
+}
+
+:root {
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --darkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100svh;
+  background-color: #f8f8f8;
+  background-color: var(--cream);
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr; /* Default: single column */
+  max-width: 350px;
+  background-color: white;
+  border-radius: 0.7rem;
+  color: var(--dark-grayish-blue);
+  box-shadow: 0 6px 40px -20px hsl(35, 8%, 70%);
+}
+
+.card-content {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.card-content > p {
+  line-height: 1.5rem;
+}
+
+.card-content > h1 {
+  color: var(--dark-blue);
+  font-family: "Fraunces";
+  font-size: 2rem;
+}
+
+.logo {
+  font-size: 0.9rem;
+  letter-spacing: 0.3rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.7rem 0.7rem 0rem 0rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.prices > h2 {
+  font-size: 2rem;
+  color: var(--darkcyan);
+  font-family: "Fraunces";
+}
+
+.prices > p {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+.card-content > button {
+  background-color: var(--darkcyan);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-content > button:hover {
+  background-color: hsl(158, 26%, 43%);
+}
+
+.card-content > button:active {
+  background-color: hsl(158, 26%, 18%);
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  .card {
+    grid-template-columns: 1fr 1fr; /* Two columns for image and content */
+    max-width: 650px; /* Wider card on desktop */
+  }
+  .card img {
+    border-radius: 0.7rem 0 0rem 0.7rem;
+  }
+  .card-content {
+    gap: 1.5rem;
+  }
+}
